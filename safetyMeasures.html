@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet/scss" href="./assets/css/style.scss" media="screen" type="text/css">
+        <link rel="stylesheet/scss" href="./assets/css/style.scss" media="print" type="text/css">
+        
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+ 
+        
+        <style>
+        {
+            box-sizing: border-box;
+        }
+               /* Set additional styling options for the columns */
+        .column {
+        float: left;
+        }
+           
+               /* Set width length for the left, right and middle columns */
+        .left {
+        width: 25%;
+        }
+        .left2 {
+        width: 25%;
+        }
+           
+        .middle {
+        width: 25%;
+        }
+               
+        .right {
+        width: 25%;
+        }
+           
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .navbar {
+        overflow: hidden;
+        background-color: rgb(183, 163, 255);
+        font-family: Arial;
+        }
+
+        .navbar a {
+        float: left;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        }
+        section {
+        display: block;
+        background: yellow;
+        left: 50%;
+        text-align: center;
+        float: center;
+        width: 100%;
+        padding: 20px 0px
+        }
+        </style>
+    </head>
+
+    <body>
+            
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#news">Learn</a>
+            <a href="#news">Quiz</a>
+            <a href="#news">Extra Fun</a>
+            
+        </div>
+
+        <section>
+            <img src="assets\school.jpg" style='height: 100%; width: 100%; object-fit: contain'/>
+            <h1>We're all in this together. Here is what you can do:</h1>
+            
+        </section>
+
+        <div class="row">
+            <div class="column left" style="background-color:#FFB695;">
+                       <h2>Wash Your Hands</h2>
+                       <img src="assets\washing-hands.png" style='height: 100%; width: 100%; object-fit: contain'/>
+                       <p>Data..</p>
+            </div>
+            <div class="column left2" style="background-color:#d9fdb0;">
+                <h2>Avoid Touching Your Face</h2>
+                <p>Data..</p>
+            </div>
+            <div class="column middle" style="background-color:#96D1CD;">
+                       <h2>Wear a Mask</h2>
+                       <img src="assets\ICON726.jpg" style='height: 100%; width: 100%; object-fit: contain'/>
+                       <p>Data..</p>
+            </div>
+            <div class="column right" style="background-color:#74C3E1;">
+                       <h2>Social Distance</h2>
+                       <img src="assets\ure.png" style='height: 100%; width: 100%; object-fit: contain'/>
+                       <h3>What is social distancing?</h3>
+            </div>
+        </div>
+    </body>
+</html>
+
+   
