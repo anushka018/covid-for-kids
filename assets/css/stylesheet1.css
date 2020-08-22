@@ -1,3 +1,7 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 {
     box-sizing: border-box;
 }
@@ -21,16 +25,16 @@ clear: both;
 }
 .navbar {
 overflow: hidden;
-background-color: rgb(183, 163, 255);
-font-family: Arial;
+background-color: rgb(42, 61, 148);
+font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .navbar a {
 float: left;
 font-size: 20px;
-color: black;
+color: rgb(255, 255, 255);
 text-align: center;
-padding: 20px 20px;
+padding: 10px 20px;
 text-decoration: none;
 }
 section {
@@ -39,17 +43,24 @@ background: rgb(255, 255, 135);
 left: 50%;
 text-align: center;
 float: center;
-width: 100%;
-padding: 20px 0px
 }
+.type0 {
+    display: block;
+    background: #ff43b7;
+    left: 50%;
+    text-align: center;
+    float: center;
+    width: 100%;
+    padding: 5px 0px
+    }
 .type1 {
 display: block;
-background: rgb(255, 255, 135);
+background: #fffc5d;
 left: 50%;
 text-align: center;
 float: center;
 width: 100%;
-padding: 20px 0px
+padding: 5px 0px
 }
 .type2 {
 display: block;
@@ -79,13 +90,13 @@ margin-right: auto;
 width: 50%;
 }
 .header {
-padding: 60px;
+padding: 30px;
 text-align: center;
 background: rgb(252, 252, 252) url(../1.jpg) 100% 100%;
 background-size: cover;
 height: 100%;
 color: #000000;
-font-size: 30px;
+font-size: 24px;
 }
 .modal {
 display: none; /* Hidden by default */
@@ -113,8 +124,8 @@ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 .close {
 color: #aaa;
 float: right;
-font-size: 28px;
-font-weight: bold;
+font-size: 36px;
+font-weight: normal;
 }
 
 .close:hover,
