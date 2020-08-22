@@ -18,29 +18,16 @@
             box-sizing: border-box;
         }
                /* Set additional styling options for the columns */
-        .column {
-        float: left;
-        padding: 20px 40px
+        .col-container {
+            display: table; /* Make the container element behave like a table */
+            width: 100%; /* Set full-width to expand the whole page */
         }
-           
-               /* Set width length for the left, right and middle columns */
-        .left {
-        width: 20%;
-       
-        }
-        .left2 {
-        width: 20%;
-        
-        }
-           
-        .middle {
-        width: 20%;
-        
-        }
-               
-        .right {
-        width: 20%;
 
+        .col {
+            display: table-cell; /* Make elements inside the container behave like table cells */
+            width:21%; 
+            padding:1%; 
+            margin:0 1%;
         }
            
         .row:after {
@@ -84,6 +71,42 @@
         color: #000000;
         font-size: 30px;
         }
+        .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        }
         </style>
     </head>
 
@@ -111,33 +134,92 @@
             
         </section>
 
-        <div class="row">
-            <div class="column left" style="background-color:#ff8181;">
+        <div class="col-container">
+            <div class="col" style="background-color:#ff8181;">
                        <h2>Wash Your Hands</h2>
-                       <img src="assets\washing-hands.png" style='height: 100%; width: 100%; object-fit: contain'/>
-                       <p>Data..</p>
+                       
+                       <button id="myBtn3"><img src="assets\washing-hands.png" style='height: 100%; width: 100%; object-fit: contain'/></button>
+                        <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h3>How long should I wash my hands?</h3>
+                            <p>Wash your hands with soap and water for at least 20 seconds. You can also use hand sanitizer if soap and water is not available.</p>
+     
+                            <h3>When should I wash my hands?</h3>
+                            <p>- Before eating or making food</p>
+                            <p>- After leaving a public place</p>
+                            <p>- After touching your mask</p>
+                            <p>- After blowing your nose, coughing, or sneezing</p>
+                            <p>- After spending time with someone sick</p>
+                            <p>- After using the restroom</p>
+     
+                            
+                            <h3>Handwashing guidelines:</h3>
+     
+                            <iframe style="width:750px;height:400px;"
+                             src="https://www.youtube.com/embed/ofcxXYvf_LE">
+                             </iframe>
+                            
+                        </div>
+                    </div>
             </div>
-            <div class="column left2" style="background-color:#ffd883;">
-                <h2>Avoid Touching Your Face</h2>
-                <img src="assets\face.jpg" style='height: 100%; width: 100%; object-fit: contain'/>
-                <p>Data..</p>
-            </div>
-            <div class="column middle" style="background-color:#8cc9fc;">
-                       <h2>Wear a Mask</h2>
-                       <img src="assets\ure.png" style='height: 100%; width: 100%; object-fit: contain'/>
-                       <p>Data..</p>
-            </div>
-            <div class="column right" style="background-color:#f2b3ff;">
-                       <h2>Social Distance</h2>
-                       <img src="assets\ICON726.jpg" style='height: 100%; width: 100%; object-fit: contain'/>
 
-                       <h3>What is social distancing?</h3>
+            <div class="col" style="background-color:#ffd883;">
+                <h2>Avoid Touching Your Face</h2>
+
+                <button id="myBtn0"><img src="assets\face.jpg" style='height: 100%; width: 100%; object-fit: contain'/></button>
+                <div id="myModal0" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>Some text in the Modal..</p>
+                      <h3>Test</h3>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="col" style="background-color:#8cc9fc;">
+                    <h2>Wear a Mask</h2>
+
+                    <button id="myBtn1"><img src="assets\ure.png" style='height: 100%; width: 100%; object-fit: contain'/></button>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                        
+                            <h3>Why should I wear a mask?</h3>
+                            <p>When a person talks, coughs, or sneezes, they release droplets that can carry the virus and make you sick. 
+                                Masks protect you by blocking these droplets.</p>
+
+                            <h3>It's safest if everyone wears a mask.</h3>
+                            <p>By wearing a mask, you're not only protecting yourself but also others around you. This is very important 
+                                for stopping the spread of Covid-19.
+                            </p>
+                            <img src="assets\mask.png" style="width:782px;height:592px;"/>
+
+                            <h3>My mask is uncomfortable/doesn't fit - what can be done about it?</h3>
+                            <p> <a href="index.html">Click here</a> for tips about masks and find the right sized mask for you.</p>
+                        </div>
+                    </div>
+                    
+                    
+            </div>
+
+            <div class="col" style="background-color:#f2b3ff;">
+                       <h2>Social Distance</h2>
+                       
+                       <button id="myBtn2"><img src="assets\ICON726.jpg" style='height: 100%; width: 100%; object-fit: contain'/></button>
+                        <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+
+                            <h3>What is social distancing?</h3>
                        <P>Social distancing means staying home, staying away from large groups of people, and staying 6 feet (2 meters) away from other people.</P>
 
                        <h3>Why should we social distance?</h3>
                        <P>It's harder for the virus to spread when people stay far away from each other.</P>
                        
-                       <p> <a href="sim2.html">See</a> how social distancing helps to prevent the spread of Covid-19.</p>
+                       <p> <a href="sim2.html">See how</a> social distancing helps to prevent the spread of Covid-19.</p>
 
                        <h3>What about school?</h3>
                        <p>Schools should have communicated with your parents about their plans for this school year. 
@@ -146,18 +228,55 @@
                             <p>- Hybrid (A combination of online and in person)</p>
                             <p>- In person</p>
                         
-                        <p>Here are some resources to help you get ready for this school year:</p>
+                        <p><a href="index.html">Here</a> are some resources to help you get a head start for this school year.</p>
 
                        <h3>I miss my friends/I'm bored - what can I do?</h3>
-                       <p> See our
-                        <a href="index.html">extra fun</a> 
-                        page for fun activities to do during quarantine.
+                       <p> 
+                        <a href="index.html">Look here</a> 
+                        for fun activities to do during quarantine and ways to hang out with your friends while staying safe.
                        </p>
-                       
-                       
+                           
+                        </div>
+                    </div>
             </div>
         </div>
     </body>
+
+    <script>
+
+        function click(button_name, modal_name, span_num){
+            // Get the modal
+            var modal = document.getElementById(modal_name);
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById(button_name);
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[span_num];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+            
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        }
+        click("myBtn0","myModal0", 1)
+        click("myBtn1","myModal1", 2)
+        click("myBtn2","myModal2", 3)
+        click("myBtn3","myModal3", 0)
+        </script>
 </html>
 
    
