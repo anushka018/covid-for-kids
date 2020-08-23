@@ -1,0 +1,68 @@
+
+
+html{
+    height: 100%;
+}
+body {
+    /*background: rgb(2,0,36);*/
+
+background: linear-gradient(to bottom, white, green);
+}
+
+/* h1 {
+    font-size: 10px;
+    /*browsers come with fonts built in, if browser supports it that will load it,  the oters are fall backs */
+    /* font-family:  'Indie Flower',arial,cursive;
+    text-align: center;
+    text-decoration: underline;
+} */ */
+
+li{
+    list-style-type: none;
+    float: left;
+    margin-right:10px;
+   
+}
+div h1{
+   border: 1px solid black;
+   border-radius: 10px  ; 
+   box-shadow: 4px 4px gray;
+
+}
+
+h1{
+    margin: 0;
+    padding:20px;
+    /* border: 10px solid black; */
+    font-family: 'Indie Flower', cursive;
+}
+/*appears in line but theyre their own bloack and so can manipualte*/
+h1{display: inline-block;
+width: 200px;
+font-size: 30px;
+font-family: 'Indie Flower', cursive;}
+
+
+a{
+    margin: 0;
+    padding:20px;
+    border: 10px solid black;
+    font-family: 'Indie Flower', cursive;
+}
+
+a{display:inline-block;
+width:200px;
+text-align:center;
+text-shadow: 5px 5px 5px gray;
+font-family: 'Indie Flower', cursive;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+li{
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
