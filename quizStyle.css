@@ -1,0 +1,34 @@
+body{
+	/*background-color:#EEE;*/
+	background:url(" https://i.pinimg.com/originals/80/40/b5/8040b5ff91ce8c3f153beebab39d584f.gif");
+	font-family: comic sans ms, comic;
+	color:white;
+}
+#container{ 
+	width:1220px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#header{
+	font-size:35px;
+}
+#quiz{
+	width:500px;
+	float:left;
+}
+#result{
+	font-size:35px;
+	width:500px;
+	
+}
+#image1{
+	margin-auto;
+	width:900px;
+	float left;
+
+}
+/*#images2{
+	width:500px:
+	float:right;
+}*/
