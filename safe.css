@@ -1,0 +1,89 @@
+html{
+    height: 100%;
+}
+/* body {
+    /*background: rgb(2,0,36);*/
+
+/* background: linear-gradient(to bottom, white, green);
+}  */
+
+
+body {
+    background-image: url(giph.gif);
+    background-repeat:repeat;
+    background-image:cover;
+    
+
+}
+a{
+    margin: 0;
+    padding:20px;
+    /* border: 10px solid black; */
+    border: 1px solid black;
+   border-radius: 10px  ; 
+   box-shadow: 9px 9px rgb(168, 240, 75);
+   /* font-family: 'Fredoka One', cursive; */
+font-family: 'Indie Flower', cursive;
+  
+}
+/* h1 {
+    font-size: 10px;
+    /*browsers come with fonts built in, if browser supports it that will load it,  the oters are fall backs */
+    /* font-family:  'Indie Flower',arial,cursive;
+    text-align: center;
+    text-decoration: underline;
+} */ */
+
+li{
+    list-style-type: none;
+    float: left;
+    margin-right:10px;
+   
+}
+ h1{
+   border: 1px solid black;
+   border-radius: 10px 40px  ; 
+   box-shadow: 4px 4px gray;
+   text-align:center;
+
+}
+div p{
+    
+        
+            font-size: 20px;
+            font-family: 'Indie Flower', cursive;
+            text-align: center;
+            padding-top: 100px;
+            padding-left: 300px;
+            padding-right:200px;
+        
+    
+}
+ul{
+    list-style-type:none;
+    position: absolute;
+    top: 500px;
+    padding-top: 200px;
+    padding-left: 400px;
+    padding-right:40px;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+}
+#vid{
+    position: absolute;
+    right: 30px;
+}
+#img{
+    position: relative;
+    top: -100px;
+    left: 600px;
+}
+#img2{
+    position: relative;
+    bottom: -400px;
+    left: 100px;
+}
+#aud{
+    position: relative;
+    bottom: 400px;
+}
