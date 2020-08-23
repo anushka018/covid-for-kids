@@ -1,0 +1,116 @@
+
+
+html{
+    height: 100%;
+}
+body {
+    /*background: rgb(2,0,36);*/
+
+background: linear-gradient(to bottom, white, green);
+}
+
+body {
+    background-image: url(what.jpg);
+    background-repeat:no-repeat;
+    background-image:cover;
+    
+
+}
+
+/* h1 {
+    font-size: 10px;
+    /*browsers come with fonts built in, if browser supports it that will load it,  the oters are fall backs */
+    /* font-family:  'Indie Flower',arial,cursive;
+    text-align: center;
+    text-decoration: underline;
+} */ */
+
+#lis{
+    list-style-type: none;
+   
+    margin-right:10px;
+    font-family:  'Indie Flower',arial,cursive;
+   
+}
+
+/* div h1{
+   border: 1px solid black;
+   border-radius: 10px  ; 
+   box-shadow: 9px 9px rgb(168, 240, 75);
+
+}
+
+h1{
+    margin: 0;
+    padding:20px;
+    /* border: 10px solid black; */
+    /* font-family: 'Indie Flower', cursive;
+} */ 
+/*appears in line but theyre their own bloack and so can manipualte*/
+
+
+h1{
+text-align: center;
+top:100px;
+position: absolute;
+padding-left: 650px;
+/* padding-top:-500px;
+padding-right: 300px; */
+/* position: relative;
+top:300px;
+left: 100px; */
+font-size: 50px;
+font-family: 'Indie Flower', cursive;
+}
+
+/* {display: inline-block;
+width: 200px;
+font-size: 30px;
+font-family: 'Indie Flower', cursive;
+} */
+
+
+a{
+    margin: 0;
+    padding:20px;
+    /* border: 10px solid black; */
+    border: 1px solid black;
+   border-radius: 10px  ; 
+   box-shadow: 9px 9px rgb(168, 240, 75);
+   font-family: 'Fredoka One', cursive;
+font-family: 'Indie Flower', cursive;
+  
+}
+
+a{display:inline-block;
+width:200px;
+text-align:center;
+text-shadow: 5px 5px 5px gray;
+font-family: 'Indie Flower', cursive;
+}
+
+div p{
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 500px;
+    padding-right:200px;
+}
+
+li{
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    padding-left: 500px;
+    padding-right:200px;
+}
+
+#sck{
+    position: absolute;
+    
+    right:10px;
+}
+#aud2{
+    position: relative;
+    bottom: 650px;
+}
