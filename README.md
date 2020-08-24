@@ -1,5 +1,5 @@
 # covid-for-kids
- Website URL: https://anushka018.github.io/covid-for-kids/
+ Website URL: https://anushka018.github.io/covid-for-kids/ (view site code in the gh-pages branch)
  
 Our Hack for the People Hackathon project is creating a kid-friendly learning site on covid 19. It is specifically designed for children ages 5-10 to understand the coronvirus and have a basic understanding of what’s going on. This will help them know how to stay safe as covid cases continue to increase in the US.
 
